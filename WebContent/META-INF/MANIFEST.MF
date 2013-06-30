@@ -1,13 +1,15 @@
 Bundle-ClassPath: WEB-INF/classes,
- WEB-INF/lib/vaadin-client-compiled-7.1.0.beta1.jar,
- WEB-INF/lib/vaadin-themes-7.1.0.beta1.jar
+ WEB-INF/lib/vaadin-client-compiled-7.1.0.jar,
+ WEB-INF/lib/vaadin-themes-7.1.0.jar
 Bundle-ManifestVersion: 2
 Bundle-Name: hello-osgi
 Bundle-SymbolicName: com.packtpub.learnvaadin.osgi
 Bundle-Version: 1.0.0
 Bundle-Vendor: Nicolas Frankel
-Import-Package: javax.servlet, javax.servlet.http, com.vaadin.server,
- com.vaadin.ui
+Import-Package: com.vaadin.server;version="[7.1.0,7.1.0]",
+ com.vaadin.ui;version="[7.1.0,7.1.0]",
+ javax.servlet,
+ javax.servlet.http
 Manifest-Version: 1.0
 Web-ContextPath: /osgi
 
